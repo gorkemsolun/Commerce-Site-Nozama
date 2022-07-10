@@ -1,2 +1,2 @@
-# Commerce-Site
-React
+# Commerce-Site Nozama
+React, Bootstrap
