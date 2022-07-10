@@ -1,6 +1,22 @@
 .highlight {
     background-color:aqua;
 }
+
 .navbar-style {
     background-color: bisque !important;
+}
+
+.aqua-highlight {
+    color: aquamarine;
+    font-size: 31px;
+}
+
+.green-highlight {
+    color: greenyellow;
+    font-size: 31px;
+}
+
+.default-highlight {
+    color: whitesmoke;
+    font-size: 31px;
 }
