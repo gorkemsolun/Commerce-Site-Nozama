@@ -6,17 +6,7 @@ export default class ShoppingCart extends Component {
         super(props);
         console.log("cons");
         this.state = {
-            products: [
-                {
-                    id: 1, name: "Best Monitor", price: 1, amount: 1
-                },
-                {
-                    id: 2, name: "Best Telephone", price: 2, amount: 1
-                },
-                {
-                    id: 3,  name: "Not Best Telephone", price: 1, amount: 10
-                }
-            ],
+            products: [],
         };
     };
     
@@ -36,8 +26,10 @@ export default class ShoppingCart extends Component {
         </div>
     };
 
-    componentDidMount() {
-        console.log("didm");
+    componentDidMount = async () => {
+        var response = await fetch("http://localhost:3000/products", {method: "GET"});
+        console.log(response);
+        this.setState({products: await response.json()});
     };
 
     componentDidUpdate (prevProps, prevState) {

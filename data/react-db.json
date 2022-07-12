@@ -1,0 +1,11 @@
+{
+    "products": [
+        {"id": 1, "name": "Best Monitor", "price": 1, "amount": 1},
+        {"id": 2, "name": "Best Telephone", "price": 2, "amount": 1},
+        {"id": 3,  "name": "Not Best Telephone", "price": 1, "amount": 10}
+    ],
+    "users": [
+        {"id":1, "email": "email@email.com", "password": "123"},
+        {"id":2, "email": "ahmet@email.com", "password": "124"}
+    ]
+}
